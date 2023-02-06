@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto";
+}
+:root {
+    --darkColor: #19283f;
+    --green-color: #33d1cc;
+    --red-color: #ff3150;
+    --yellow-color: #ffc400;
+    --section-color: #eff7fa;
+}
+.navbar  {
+    background-color: var(--darkColor);
+}
+nav div .nav-links ul li a {
+    color:white !important
+}
+nav div .nav-links ul li a:active,
+nav div .nav-links ul li a:focus,
+nav div .nav-links ul li a:hover{
+    color: var(--green-color) !important;
+}
+nav div .nav-links ul {
+    justify-content: flex-end;
+}
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
+nav div .nav-links span {
+    color:white !important;
+    border-left: solid 1px var(--green-color);
+}
+nav div .nav-links .btn {
+    background-color: var(--red-color) !important;
+    border-radius: 30px;
+    color: white;
+}
+.land {
+    height: calc(100vh - 70px);
+    background-image: url("../imgs/land-1.jpg");
+    background-size: cover;
+    color: white;
+}
+.land:hover,
+.land:focus {
+    background-image: url("../imgs/land-2.jpg");
+}
+.land:hover p {
+    color:white !important;
+}
+.land .btn {
+    background-color: var(--red-color);
+    border-radius: 30px;
+}
+.section-2 hr {
+    color: var(--green-color);
+    background:var(--green-color);
+    height: 3px;
+    width: 15%;
+}
+.text-size-10 {
+    font-size: 10rem;
+}
+.text-size-5 {
+    font-size: 4rem;
+}
+.section-3{
+    color: var(--green-color);
+}
+.section-3 .position-absolute {
+    top:25%;
+}
+.section-3 .h1 {
+    color: var(--yellow-color);
+}
+.section-3 div div div:first-child {
+    opacity: 10%;
+}
+.section-color {
+    background-color: var(--section-color);
+}
+.section-color .h2 {
+    color: var(--yellow-color);
+    font-weight: 900;
+}
+.btn:hover ,
+.sec-btn .btn{
+    color: var(--yellow-color);
+}
+.sec-btn span .btn:first-child {
+    background-color: var(--red-color);
+    border-radius: 20px;
+    color: var(--yellow-color);
+}
+.sec-btn .btn {
+    color: black;
+}
+.sec-btn .btn:hover {
+    color: var(--red-color);
+}
+.section-5 .position-relative::after {
+    content: "Applcation";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(51 209 204 / 76%);
+    top: 0;
+    color: white;
+    font-weight: 900;
+    font-size: 1.75rem;
+    transition: 0.3s;
+    right: calc(100% - 0px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-5 .position-relative:hover:after {
+    right: 0%;
+}
+.navbar .btn,
+.land .btn ,
+.land .btn:hover {
+    color: var(--yellow-color) !important;
+    background-color: var(--red-color) !important;
+}
+.section-7 .h4 {
+    background-color: var(--green-color);
+}
+.section-9 {
+    background-color: var(--darkColor);
+}
+.section-form{
+    background-color: var(--yellow-color);
+}
+.section-form .btn:hover,
+.section-form .btn {
+    background-color: var(--darkColor);
+    color: var(--yellow-color);
+    border-radius: 30px;
+}
+.section-form form input::placeholder {
+    color: white;
+}
+.section-form form input:hover,
+.section-form form input:focus,
+.section-form form input{
+    background-color: var(--yellow-color);
+    width: 100%;
+    font-size: 1.75rem;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    color: white;
+    border-bottom: solid 1px white ;
+}
+.about {
+    background-color: var(--darkColor);
+    color: white;
+}
